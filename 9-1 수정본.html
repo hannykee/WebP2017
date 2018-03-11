@@ -1,0 +1,22 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>1</title>
+</head>
+
+<body>
+<input id = "dept" type = "text" name="department" value="IT"/>
+<input type = "button" id = "" value = "Name 찾기" onclick="test();"/>
+
+<script type = "text/javascript">
+var N = document.getElementById("dept");
+  N.name = document.getElementById("dept").name;
+  N.value = document.getElementById("dept").value;
+		function test(){
+		 document.write("name 은 " + N.name + "이며 value는 " + N.value + " 이다. ")
+		}
+
+</script>
+
+</body>
+</html>

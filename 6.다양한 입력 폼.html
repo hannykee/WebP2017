@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>6.다양한 입력 폼</title>
+		<sytle type="text/css">
+
+		</style>
+	</head>
+
+	<body>
+		<form method="get" action="form_app.js">
+	이름:<input type="text" name="변수명" value="(입력 창 초기문자)"/> <br>
+	pw: <input type="password" name="비밀번호"/> <br>
+	소개:<input type="textarea" rows="60px" cols="50px"> 텍스트 초기에 보일 문장 </textarea> <!--뒤에 맺음 태그 존재-->
+	 
+	<h4>선택항목입력</h4><br>
+	남자:<input type="radio" name="이름 같은 것 중 값 하나 선택" value="남자"/>
+	여자:<input type="radio" name="이름 같은 것 중 값 하나 선택" value="여자" checked/><br>
+		중복:믿음<input type="checkbox" name="체크된 모든 값이 전송됨" value="믿음"/>
+			소망<input type="checkbox" name="체크된 모든 값이 전송됨" value="소망"/>
+			사랑<input type="checkbox" name="체크된 모든 값이 전송됨" value="사랑" checked/> <br>
+	드롭다운형태 <select name="드롭다운 형태" size="1">
+							<option value="외로움">외로움</option>  <!--뒤에 맺음 태그 존재-->
+							<option value="좌절감" selected>좌절감</option>
+							<option value="무력감">무력감</option>
+						</select>  <!--다중 선택은 그냥 단순하게 <select name="드롭다운" size="총 숫자" multiple></select>-->
+	<br>
+	<h4>버튼 입력</h4>
+  전송 <input type="submit" value= "화면에 보이는 글자(라벨)"/>
+  초기화 <input type="reset" value="화면에 보이는 글자"/>
+  일반 <input type="button" value="화면에 보이는 글자"/>
+  이미지버튼 <input type="image" src="이미지 파일 주소" alt="대체문자"/>
+  		<button type="submit">버튼 라벨</button>  <!--요게 바로 최신 html5방식(onclick 옵션은 나중에 나오겠지)-->
+	
+	<br>
+	<h4>기타 입력 필드</h4>
+	파일 <input type="file" name="기획서"/> <br>
+	데이터숨김 잘암씀 <input type="hidden" name="변수명" value="값"/>	<br>
+	텍스트 라벨 <label for="성별">성별: </label> <!--얘도 뒷태그--> <input type="radio" name="같은" value="다른"/>
+	그룹핑 <fieldset name="이름 굳이 없어도 됨">
+					<legend>그룹의 제목 라벨</legen>
+					input들을 넣음
+				</fieldset>
+				
+	<h4>서식이 있는 텍스트 입력</h4>
+			<input type="email"/> <!-- @.형식에 맞는지 체크-->
+			<input type="email" multiple/>
+			<input type="url" value="http://"/> <!--http:// 형식에 맞는지 체크-->
+			
+			<input type="tel" placeholder="000-0000-0000" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}"/>
+			<input type="search"/>
+				<input type="date"/> 
+				<
+
+		</form>
+	</body>
+</html>
